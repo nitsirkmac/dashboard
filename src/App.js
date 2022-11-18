@@ -1,9 +1,10 @@
 import './App.css';
+import Dashboard from "./Dashboard.js"
 
 function App() {
   return (
     <div>
-      <h1>HIT THE DASH!</h1>
+      <Dashboard />
     </div>
   );
 }

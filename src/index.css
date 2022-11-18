@@ -1,3 +1,46 @@
-body {
-  background-color: pink;
+div {
+  border: 3px solid black;
+  margin: 3px;
 }
+
+.dashboard {
+  display: grid;
+  grid-template-columns: [first] 25% [line2] 25% [line3] 25% [line4] 25% [last];
+  grid-template-rows: [row1-start] 40% [midrow] 60% [lastline];
+}
+
+.sidebar {
+  grid-column-start: first;
+  grid-column-end: line2;
+  grid-row-start: row1-start;
+  grid-row-end: lastline;
+}
+
+.reviews {
+  grid-column-start: line2;
+  grid-column-end: line3;
+  grid-row-start: row1-start;
+  grid-row-end: midrow;
+}
+
+.avg {
+  grid-column-start: line3;
+  grid-column-end: line4;
+  grid-row-start: row1-start;
+  grid-row-end: midrow;
+}
+
+.sentAnalysis {
+  grid-column-start: line4;
+  grid-column-end: last;
+  grid-row-start: row1-start;
+  grid-row-end: midrow;
+}
+
+.webVisitors {
+  grid-column-start: line2;
+  grid-column-end: last;
+  grid-row-start: midrow;
+  grid-row-end: lastline;
+}
+
