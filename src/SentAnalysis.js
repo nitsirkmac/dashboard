@@ -3,9 +3,9 @@ const SentAnalysis = () => {
         <div className="sentAnalysis">
             <h1>Sentiment Analysis</h1>
             <ul>
-                <li>Positive Reviews</li>
-                <li>Neutral Reviews</li>
-                <li>Negative Reviews</li>
+                <li>960 Positive Reviews</li>
+                <li>122 Neutral Reviews</li>
+                <li>321 Negative Reviews</li>
             </ul>
         </div>
     )

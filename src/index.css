@@ -1,12 +1,16 @@
 div {
   border: 3px solid black;
   margin: 3px;
+  padding: 5px;
 }
 
 .dashboard {
   display: grid;
-  grid-template-columns: [first] 25% [line2] 25% [line3] 25% [line4] 25% [last];
-  grid-template-rows: [row1-start] 40% [midrow] 60% [lastline];
+  grid-template-columns: [first] 250px [line2] 125px [line2mid] 125px [line3] 250px [line4] 250px [last];
+  grid-template-rows: [row1-start] 350px [row1-end] 100px [midrow] 600px [lastline];
+  background-color: slategrey;
+  color: black;
+  font-family: "Papyrus";
 }
 
 .sidebar {
@@ -14,6 +18,8 @@ div {
   grid-column-end: line2;
   grid-row-start: row1-start;
   grid-row-end: lastline;
+  place-items: center;
+  background-color: slategrey;
 }
 
 .reviews {
@@ -21,6 +27,25 @@ div {
   grid-column-end: line3;
   grid-row-start: row1-start;
   grid-row-end: midrow;
+  background-color: slategrey;
+}
+
+.posReviews {
+  grid-column-start: line2;
+  grid-column-end: line2mid;
+  grid-row-start: row1-end;
+  grid-row-end: midrow;
+  background-color: rgb(79, 151, 90);
+  border: none;
+}
+
+.negReviews {
+  grid-column-start: line2mid;
+  grid-column-end: line3;
+  grid-row-start: row1-end;
+  grid-row-end: midrow;
+  background-color: rgb(206, 101, 101);
+  border: none;
 }
 
 .avg {
@@ -28,6 +53,7 @@ div {
   grid-column-end: line4;
   grid-row-start: row1-start;
   grid-row-end: midrow;
+  background-color: slategrey;
 }
 
 .sentAnalysis {
@@ -35,6 +61,7 @@ div {
   grid-column-end: last;
   grid-row-start: row1-start;
   grid-row-end: midrow;
+  background-color: slategrey;
 }
 
 .webVisitors {
@@ -42,5 +69,6 @@ div {
   grid-column-end: last;
   grid-row-start: midrow;
   grid-row-end: lastline;
+  background-color: slategrey;
 }
 
